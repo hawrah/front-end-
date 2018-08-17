@@ -1,0 +1,47 @@
+
+
+
+.container1{
+    width: 290px;
+    height: 370px;
+    background: tomato;
+    position: relative;
+    right: 25%;
+    top: 10px;
+    transform: translate(-50%, 50%);
+    perspective: 1000px;
+}
+
+.cover1{
+    width: 250px;
+    height: 100%;
+    background-color: #345b8c;
+    position: absolute;
+    right: 40px;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: all .5s ease-in;
+}
+
+.container1:hover .cover1{
+    transform: rotateY(-180deg);
+}
+
+.f{
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+figure.front1{
+    background: red;
+}
+
+figure.back1{
+    background: green;
+    transform: rotateY(180deg);
+}
